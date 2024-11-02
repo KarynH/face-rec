@@ -17,6 +17,7 @@ app.add_middleware(
 
 
 class FaceEncoding(BaseModel):
+    student_name: str
     student_id: str
     face_encoding: List[float]
     
