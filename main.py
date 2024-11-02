@@ -23,5 +23,10 @@ async def get_face_data(student_id: str):
         return {"student_id": face_data["student_id"], "face_encoding": face_data["face_encoding"]}
     raise HTTPException(status_code=404, detail="Face data not found")
 
-#uvicorn main:app --reload
+'''
+run server locally:
+uvicorn main:app --reload
+
+link:
 #http://localhost:8000/docs
+'''
