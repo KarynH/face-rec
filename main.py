@@ -2,19 +2,8 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
 from database import collection
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Use ["http://localhost:3000"] for local React app, or specify your frontend URL
-    allow_credentials=True,
-    allow_methods=["*"],  # Allow all HTTP methods
-    allow_headers=["*"],  # Allow all headers
-)
-
 
 class FaceEncoding(BaseModel):
     student_name: str

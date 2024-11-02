@@ -1,8 +1,8 @@
 #uvicorn is an ASGI web server implementation for python
 #fast api is a framework used to build apis with python
 
-import cv2
-import face_recognition
+# import cv2
+# import face_recognition
 
 # os built-in python module to access environment var mongo_uri
 import os
