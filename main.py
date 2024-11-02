@@ -31,7 +31,7 @@ async def get_all_faces():
 
 @app.get("/get-face/")
 async def get_all_faces():
-    faces = collection.find()
+    faces = list(collection.find())
     all_faces = [{"student_name": face["student_name"], "face_encoding": face["face_encoding"]} for face in faces]
    
     if all_faces:
