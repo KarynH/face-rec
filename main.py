@@ -6,6 +6,7 @@ from database import collection
 app = FastAPI()
 
 class FaceEncoding(BaseModel):
+    student_name: str
     student_id: str
     face_encoding: List[float]
     
